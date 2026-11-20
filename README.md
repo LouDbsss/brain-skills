@@ -1,27 +1,36 @@
 # Brain Skills — six practical specialists
 
-Open, portable skills for AI agents, based on the six Brain specialist profiles. Each skill is a standalone `SKILL.md` following the [Agent Skills format](https://agentskills.io/specification). They can be installed individually or used together.
+Open, portable skills for AI agents, based on the six Brain specialist profiles. Each skill is a standalone SKILL.md following the [Agent Skills format](https://agentskills.io/specification). They can be installed individually or used together.
 
 ## The six skills
 
 | Skill | Use it for |
 |---|---|
-| `brain-strategy` | Product direction, audience, offer, business goals and conversion paths |
-| `brain-design` | UX/UI, accessibility, visual consistency and interaction design |
-| `brain-engineering` | Architecture, implementation, integrations, performance and secure development |
-| `brain-visibility` | Technical/local SEO, content structure, GEO/AEO and measurement |
-| `brain-compliance` | Jurisdiction-aware compliance issue spotting and evidence gathering |
-| `brain-audit` | Release review, evidence, risk prioritization and verification status |
+| brain-strategy | Product direction, audience, offer, business goals and conversion paths |
+| brain-design | UX/UI, accessibility, visual consistency and interaction design |
+| brain-engineering | Architecture, implementation, integrations, performance and secure development |
+| brain-visibility | Technical/local SEO, content structure, GEO/AEO and measurement |
+| brain-compliance | Jurisdiction-aware compliance issue spotting and evidence gathering |
+| brain-audit | Release review, evidence, risk prioritization and verification status |
 
 ## Install
 
-Copy any skill folder into the skills directory supported by your agent. For example, Codex and Claude Code can discover repository skills under `.agents/skills/` and `.claude/skills/` respectively. Check your agent's current documentation for its supported install path.
+### Claude Code
 
-To try all six in this repository, copy `skills/*` to your agent's project skills directory. A skill provides instructions; it does not grant access to tools, files, accounts, networks, or private data.
+In Claude Code (terminal, desktop, or IDE), paste these commands one at a time. The first adds this GitHub marketplace; the second opens the install flow for the plugin containing all six skills.
 
-## Publish as a separate public repository
+~~~text
+/plugin marketplace add LouDbsss/brain-skills
+/plugin install brain-skills@brain-skills
+~~~
 
-This folder is deliberately self-contained inside a larger private project. To publish only the skills, create an empty public repository on your Git host, then copy the **contents of `brain-skills/`** into a clean local clone of that new repository, review the files, and push that repository. Do not make the parent SaaS project public just to publish this package. Choose a repository name such as `brain-skills` and add its final URL here after publication.
+After installation, run a skill with one of these names: /brain-skills:brain-strategy, /brain-skills:brain-design, /brain-skills:brain-engineering, /brain-skills:brain-visibility, /brain-skills:brain-compliance, or /brain-skills:brain-audit.
+
+This installation route is for Claude Code. In Claude's regular web chat, a GitHub link alone does not install a skill; use Claude's Skills settings to add it to your account.
+
+### Other compatible agents
+
+Download a skill folder from the skills directory or copy it to the skills directory supported by your agent. A skill provides instructions; it does not grant access to tools, files, accounts, networks, or private data.
 
 ## Use together
 
@@ -37,12 +46,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Please include sources for factual addit
 
 ## License
 
-The files in this `brain-skills` package are licensed under MIT. See [LICENSE](LICENSE).
+This package is licensed under MIT. See [LICENSE](LICENSE).
 
 ---
 
 # Brain Skills — six spécialistes pratiques
 
-Skills ouverts et portables pour agents IA, dérivés des six profils spécialisés Brain. Chaque compétence est autonome et suit le format [Agent Skills](https://agentskills.io/specification). Elles s'installent séparément et peuvent être combinées.
+Skills ouverts et portables pour agents IA, dérivés des six profils Brain. Chaque compétence est un fichier SKILL.md autonome au format [Agent Skills](https://agentskills.io/specification).
 
-Le paquet ne contient ni le coffre Obsidian privé, ni données client, identifiants, code SaaS Brain ou documents de connaissances propriétaires. Les skills donnent des consignes, pas des permissions ou des outils. Ils distinguent les preuves des hypothèses et ne prétendent pas avoir exécuté de vérifications.
+## Installation dans Claude Code
+
+Dans Claude Code (terminal, application ou IDE), colle ces commandes une par une. La première ajoute cette marketplace GitHub ; la seconde ouvre l’installation du plugin avec les six skills.
+
+~~~text
+/plugin marketplace add LouDbsss/brain-skills
+/plugin install brain-skills@brain-skills
+~~~
+
+Dans la conversation Claude classique, un lien GitHub seul n’installe pas de skill. Il faut passer par les réglages Skills de Claude.
+
+Les six skills sont aussi utilisables dans les autres agents compatibles avec le format Agent Skills. Le dépôt ne contient ni le coffre Obsidian privé, ni les données client, ni les identifiants, ni le code SaaS Brain.
