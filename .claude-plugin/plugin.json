@@ -1,0 +1,10 @@
+{
+  "name": "brain-skills",
+  "version": "1.0.0",
+  "description": "Six portable specialists for strategy, design, engineering, visibility, compliance, and audit.",
+  "author": { "name": "LouDbsss" },
+  "homepage": "https://github.com/LouDbsss/brain-skills",
+  "repository": "https://github.com/LouDbsss/brain-skills",
+  "license": "MIT",
+  "keywords": ["skills", "strategy", "design", "engineering", "seo", "compliance", "audit"]
+}
