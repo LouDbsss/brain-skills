@@ -1,0 +1,17 @@
+{
+  "name": "brain-skills",
+  "description": "Open Agent Skills by Brain",
+  "owner": {
+    "name": "LouDbsss"
+  },
+  "plugins": [
+    {
+      "name": "brain-skills",
+      "source": {
+        "source": "github",
+        "repo": "LouDbsss/brain-skills"
+      },
+      "description": "Six portable skills for strategy, design, engineering, visibility, compliance, and audit."
+    }
+  ]
+}
